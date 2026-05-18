@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://alianzaseguro.com/sitemap.xml
+
+# Disallow admin or private paths if added later
+# Disallow: /admin/

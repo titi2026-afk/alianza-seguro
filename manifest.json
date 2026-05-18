@@ -1,0 +1,14 @@
+{
+  "name": "Alianza Seguro – Asesoría en Seguros de Salud",
+  "short_name": "Alianza Seguro",
+  "description": "Asesoría profesional en seguros de salud, Medicare y vida para hispanos en EE.UU.",
+  "lang": "es-US",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fb",
+  "theme_color": "#0a1128",
+  "icons": [
+    { "src": "assets/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
