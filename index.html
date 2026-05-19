@@ -161,25 +161,20 @@
   .marquee:hover .marquee-track { animation-play-state: paused; }
   .carrier-card {
     flex: 0 0 auto;
-    min-width: 180px;
-    height: 88px;
+    width: 200px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #ffffff;
     border: 1px solid #e6e8ea;
     border-radius: 14px;
-    padding: 0 1.5rem;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #0a1128;
+    padding: 1.25rem 1.5rem;
     box-shadow: 0 1px 2px rgba(10,17,40,0.04);
     transition: transform .25s, box-shadow .25s;
   }
   .carrier-card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(10,17,40,0.08); }
-  .carrier-card .carrier-sub { display: block; font-size: 9px; letter-spacing: 0.15em; color: #76767e; text-transform: uppercase; font-weight: 500; margin-top: 2px; }
-  .carrier-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+  .carrier-card img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: grayscale(0%); transition: filter .25s; }
 
   /* Photo placeholders */
   .photo-ph {
@@ -396,32 +391,29 @@
 
   <div class="marquee max-w-container mx-auto">
     <div class="marquee-track">
-      <!-- REEMPLAZAR CON LOGOS REALES: cada .carrier-card admite un <img src="assets/carriers/[carrier].svg" /> -->
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#006A4E"></span>Kaiser Permanente<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#EF4E45"></span>Oscar Health<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#005EB8"></span>BlueCross BlueShield<span class="carrier-sub">Marketplace · Medicare</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#002677"></span>UnitedHealthcare<span class="carrier-sub">Marketplace · Medicare</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#D9272E"></span>Ambetter<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#6E2585"></span>Aetna<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#00A88F"></span>Cigna<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#74AA50"></span>Humana<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#005DAA"></span>Molina Healthcare<span class="carrier-sub">Marketplace · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#0066A1"></span>Anthem<span class="carrier-sub">Marketplace · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#41B6E6"></span>WellCare<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#7A1B82"></span>Centene<span class="carrier-sub">Medicaid</span></span></div>
+      <div class="carrier-card"><img src="assets/carriers/kaiser.png" alt="Kaiser Permanente" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/oscar.png" alt="Oscar Health" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/bcbs.png" alt="BlueCross BlueShield" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/ambetter.png" alt="Ambetter Health" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/aetna.png" alt="Aetna" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/cigna.png" alt="Cigna" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/humana.png" alt="Humana" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/molina.png" alt="Molina Healthcare" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/anthem.png" alt="Anthem / Elevance Health" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/wellcare.png" alt="WellCare" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/centene.png" alt="Centene" loading="lazy" /></div>
       <!-- Duplicado para loop infinito -->
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#006A4E"></span>Kaiser Permanente<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#EF4E45"></span>Oscar Health<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#005EB8"></span>BlueCross BlueShield<span class="carrier-sub">Marketplace · Medicare</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#002677"></span>UnitedHealthcare<span class="carrier-sub">Marketplace · Medicare</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#D9272E"></span>Ambetter<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#6E2585"></span>Aetna<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#00A88F"></span>Cigna<span class="carrier-sub">Marketplace</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#74AA50"></span>Humana<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#005DAA"></span>Molina Healthcare<span class="carrier-sub">Marketplace · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#0066A1"></span>Anthem<span class="carrier-sub">Marketplace · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#41B6E6"></span>WellCare<span class="carrier-sub">Medicare · Medicaid</span></span></div>
-      <div class="carrier-card"><span><span class="carrier-dot" style="background:#7A1B82"></span>Centene<span class="carrier-sub">Medicaid</span></span></div>
+      <div class="carrier-card"><img src="assets/carriers/kaiser.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/oscar.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/bcbs.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/ambetter.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/aetna.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/cigna.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/humana.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/molina.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/anthem.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/wellcare.png" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="carrier-card"><img src="assets/carriers/centene.png" alt="" aria-hidden="true" loading="lazy" /></div>
     </div>
   </div>
 </section>
