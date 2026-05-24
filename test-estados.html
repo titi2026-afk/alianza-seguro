@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prueba: Diseños creativos para Estados | Alianza Seguro</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>tailwind.config={theme:{extend:{colors:{surface:"#f7f9fb","surface-bright":"#ffffff","surface-container":"#eceef0","surface-container-low":"#f2f4f6","surface-container-lowest":"#ffffff",primary:"#0a1128","primary-container":"#141a32","on-primary":"#ffffff","on-primary-container":"#bfc5e4",secondary:"#4a5568","on-surface":"#191c1e","outline":"#76767e","outline-variant":"#c6c6ce",gold:"#c9a961"},fontFamily:{display:["Playfair Display","serif"],sans:["Plus Jakarta Sans","sans-serif"]},maxWidth:{container:"1280px"},spacing:{"px-page":"64px"}}}}</script>
+<link href="assets/styles.css" rel="stylesheet" />
+<style>
+  body { font-family: "Plus Jakarta Sans", sans-serif; }
+  .label { background:#16a34a; color:white; padding:6px 18px; border-radius:999px; font-size:13px; font-weight:700; display:inline-block; }
+  /* Bento grid pattern background */
+  .bento-pattern {
+    background-image: radial-gradient(circle, rgba(201,169,97,0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  /* Region badge */
+  .region-badge {
+    background: linear-gradient(135deg, rgba(201,169,97,0.18), rgba(201,169,97,0.05));
+    border: 1px solid rgba(201,169,97,0.35);
+    backdrop-filter: blur(8px);
+  }
+</style>
+</head>
+<body class="bg-surface antialiased">
+
+<header class="bg-primary text-white py-8">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-2">Diseños creativos para Estados</p>
+    <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">3 propuestas para hacer la página de estados más interesante</h1>
+    <p class="text-on-primary-container text-sm"><a href="estados.html" class="underline">← Volver al sitio</a></p>
+  </div>
+</header>
+
+<!-- ============================ OPCIÓN 1 — Bento Grid mosaico ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción 1 · Bento Grid asimétrico · sizes mixtos · estilo Apple/Notion</span></div></div>
+<section class="bg-surface py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <div class="text-center mb-10 space-y-3">
+      <span class="text-xs uppercase tracking-widest text-gold font-semibold">Cobertura activa</span>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-primary">Atendemos a personas y familias en <span class="text-gold">18 estados</span></h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[160px]">
+      <!-- Georgia: hero card 2x2 -->
+      <a class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden bg-primary-container text-white p-8 flex flex-col justify-between hover:shadow-2xl transition group">
+        <div class="absolute inset-0 opacity-25 group-hover:opacity-35 transition" style="background:radial-gradient(circle at 80% 20%, rgba(201,169,97,0.6), transparent 50%)"></div>
+        <div class="relative">
+          <span class="inline-block bg-gold/20 text-gold border border-gold/40 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold mb-3">Sede principal</span>
+          <p class="font-display text-7xl text-gold leading-none">GA</p>
+        </div>
+        <div class="relative">
+          <h3 class="font-display font-bold text-3xl mb-2">Georgia</h3>
+          <p class="text-sm text-on-primary-container">Atlanta · Woodstock · Marietta · Kennesaw · Roswell · Alpharetta · y más</p>
+        </div>
+      </a>
+      <!-- FL, TX big -->
+      <a class="relative rounded-3xl overflow-hidden bg-white border border-outline-variant/60 p-5 flex flex-col justify-between hover:shadow-xl transition">
+        <p class="font-display text-4xl text-primary leading-none">FL</p>
+        <div><h3 class="font-display font-bold text-lg text-primary">Florida</h3><p class="text-xs text-secondary">Miami · Orlando · Tampa</p></div>
+      </a>
+      <a class="relative rounded-3xl overflow-hidden bg-white border border-outline-variant/60 p-5 flex flex-col justify-between hover:shadow-xl transition">
+        <p class="font-display text-4xl text-primary leading-none">TX</p>
+        <div><h3 class="font-display font-bold text-lg text-primary">Texas</h3><p class="text-xs text-secondary">Houston · Dallas · Austin</p></div>
+      </a>
+      <!-- Smaller cards -->
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">AL</p>
+        <p class="text-xs mt-1 text-on-primary-container">Alabama</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">TN</p>
+        <p class="text-xs mt-1 text-secondary">Tennessee</p>
+      </a>
+      <!-- Carolinas combined wide -->
+      <a class="md:col-span-2 relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary-container to-primary text-white p-5 flex items-center gap-4 hover:shadow-xl transition">
+        <div class="flex gap-1 text-gold">
+          <p class="font-display text-3xl leading-none">NC</p>
+          <span class="text-3xl">·</span>
+          <p class="font-display text-3xl leading-none">SC</p>
+        </div>
+        <div><h3 class="font-display font-bold text-base">Carolinas</h3><p class="text-xs text-on-primary-container">Norte y Sur</p></div>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">IN</p>
+        <p class="text-xs mt-1 text-secondary">Indiana</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">MO</p>
+        <p class="text-xs mt-1 text-secondary">Missouri</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">UT</p>
+        <p class="text-xs mt-1 text-on-primary-container">Utah</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">VA</p>
+        <p class="text-xs mt-1 text-on-primary-container">Virginia</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">IL</p>
+        <p class="text-xs mt-1 text-secondary">Illinois</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">KS</p>
+        <p class="text-xs mt-1 text-secondary">Kansas</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">AZ</p>
+        <p class="text-xs mt-1 text-on-primary-container">Arizona</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">OH</p>
+        <p class="text-xs mt-1 text-secondary">Ohio</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-white border border-outline-variant/60 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-primary leading-none">WI</p>
+        <p class="text-xs mt-1 text-secondary">Wisconsin</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">IA</p>
+        <p class="text-xs mt-1 text-on-primary-container">Iowa</p>
+      </a>
+      <a class="relative rounded-2xl overflow-hidden bg-primary-container/95 text-white border border-on-primary-container/20 p-4 hover:shadow-xl transition">
+        <p class="font-display text-3xl text-gold leading-none">KY</p>
+        <p class="text-xs mt-1 text-on-primary-container">Kentucky</p>
+      </a>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-16"><strong>1 — Bento Grid:</strong> Tamaños mixtos. Georgia 4x grande, cards intercaladas navy/blanco. Estilo Apple/Notion. Más dinámico y editorial.</p>
+
+<!-- ============================ OPCIÓN 2 — Por regiones con mapa ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción 2 · Agrupado por regiones · cada región tiene su panel con badge</span></div></div>
+<section class="bg-surface py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <div class="text-center mb-10 space-y-3">
+      <span class="text-xs uppercase tracking-widest text-gold font-semibold">Cobertura por región</span>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-primary">18 estados organizados por <span class="text-gold">región</span></h2>
+    </div>
+    <div class="space-y-6">
+      <!-- Southeast -->
+      <div class="bg-primary-container text-white rounded-3xl p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30" style="background:radial-gradient(circle at 90% 50%, rgba(201,169,97,0.4), transparent 50%)"></div>
+        <div class="relative grid md:grid-cols-4 gap-6 items-center">
+          <div class="md:col-span-1">
+            <span class="region-badge inline-block text-gold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Sureste</span>
+            <h3 class="font-display font-bold text-3xl text-white">Sureste</h3>
+            <p class="text-sm text-on-primary-container mt-2">7 estados · Nuestra región principal</p>
+          </div>
+          <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">GA</p><p class="text-[10px] text-on-primary-container uppercase">Georgia</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">FL</p><p class="text-[10px] text-on-primary-container uppercase">Florida</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">AL</p><p class="text-[10px] text-on-primary-container uppercase">Alabama</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">TN</p><p class="text-[10px] text-on-primary-container uppercase">Tennessee</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">NC</p><p class="text-[10px] text-on-primary-container uppercase">Carolina N.</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">SC</p><p class="text-[10px] text-on-primary-container uppercase">Carolina S.</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">VA</p><p class="text-[10px] text-on-primary-container uppercase">Virginia</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">KY</p><p class="text-[10px] text-on-primary-container uppercase">Kentucky</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- South -->
+      <div class="bg-white border-2 border-outline-variant/60 rounded-3xl p-8 md:p-10">
+        <div class="grid md:grid-cols-4 gap-6 items-center">
+          <div class="md:col-span-1">
+            <span class="bg-primary-container text-gold inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Sur</span>
+            <h3 class="font-display font-bold text-3xl text-primary">Sur</h3>
+            <p class="text-sm text-secondary mt-2">2 estados · Mercado clave</p>
+          </div>
+          <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <a class="bg-primary-container text-white rounded-xl p-3 text-center hover:scale-105 transition"><p class="font-display text-xl text-gold">TX</p><p class="text-[10px] text-on-primary-container uppercase">Texas</p></a>
+            <a class="bg-primary-container text-white rounded-xl p-3 text-center hover:scale-105 transition"><p class="font-display text-xl text-gold">AZ</p><p class="text-[10px] text-on-primary-container uppercase">Arizona</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- Midwest -->
+      <div class="bg-primary-container text-white rounded-3xl p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30" style="background:radial-gradient(circle at 10% 50%, rgba(201,169,97,0.4), transparent 50%)"></div>
+        <div class="relative grid md:grid-cols-4 gap-6 items-center">
+          <div class="md:col-span-1">
+            <span class="region-badge inline-block text-gold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Medio Oeste</span>
+            <h3 class="font-display font-bold text-3xl text-white">Medio Oeste</h3>
+            <p class="text-sm text-on-primary-container mt-2">7 estados · Expansión activa</p>
+          </div>
+          <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">IN</p><p class="text-[10px] text-on-primary-container uppercase">Indiana</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">MO</p><p class="text-[10px] text-on-primary-container uppercase">Missouri</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">IL</p><p class="text-[10px] text-on-primary-container uppercase">Illinois</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">KS</p><p class="text-[10px] text-on-primary-container uppercase">Kansas</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">OH</p><p class="text-[10px] text-on-primary-container uppercase">Ohio</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">WI</p><p class="text-[10px] text-on-primary-container uppercase">Wisconsin</p></a>
+            <a class="bg-gold/15 border border-gold/40 rounded-xl p-3 text-center hover:bg-gold/25 transition"><p class="font-display text-xl text-gold">IA</p><p class="text-[10px] text-on-primary-container uppercase">Iowa</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- West -->
+      <div class="bg-white border-2 border-outline-variant/60 rounded-3xl p-8 md:p-10">
+        <div class="grid md:grid-cols-4 gap-6 items-center">
+          <div class="md:col-span-1">
+            <span class="bg-primary-container text-gold inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Oeste</span>
+            <h3 class="font-display font-bold text-3xl text-primary">Oeste</h3>
+            <p class="text-sm text-secondary mt-2">1 estado · Nueva apertura</p>
+          </div>
+          <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <a class="bg-primary-container text-white rounded-xl p-3 text-center hover:scale-105 transition"><p class="font-display text-xl text-gold">UT</p><p class="text-[10px] text-on-primary-container uppercase">Utah</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-16"><strong>2 — Por Regiones:</strong> 4 paneles regionales (Sureste, Sur, Medio Oeste, Oeste). Alternan navy/blanco. Cada panel agrupa sus estados. Más organizado, fácil de escanear.</p>
+
+<!-- ============================ OPCIÓN 3 — Mapa visual con sidepanel ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción 3 · Mapa USA grande + lista lateral · interactivo visual</span></div></div>
+<section class="bg-primary-container text-white py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <div class="text-center mb-10 space-y-3">
+      <span class="text-xs uppercase tracking-widest text-gold font-semibold">Mapa interactivo</span>
+      <h2 class="font-display font-bold text-3xl md:text-4xl">Nuestra cobertura en EE.UU.</h2>
+      <p class="text-on-primary-container max-w-2xl mx-auto">Licencias activas en <span class="text-gold font-bold">18 estados</span> y creciendo.</p>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-8 items-center">
+      <div class="lg:col-span-3 bg-white/5 backdrop-blur rounded-3xl p-6 border border-white/10">
+        <img src="assets/us-map.svg" alt="Mapa de Estados Unidos con cobertura" class="w-full opacity-90" />
+      </div>
+      <div class="lg:col-span-2 space-y-3">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-gold text-primary-container p-4 rounded-xl text-center">
+            <p class="font-display font-bold text-3xl">18</p>
+            <p class="text-xs uppercase tracking-wider font-bold">Estados</p>
+          </div>
+          <div class="bg-white/10 border border-white/20 p-4 rounded-xl text-center">
+            <p class="font-display font-bold text-3xl text-gold">+15</p>
+            <p class="text-xs uppercase tracking-wider">Aseguradoras</p>
+          </div>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-5 border border-white/10">
+          <p class="text-xs uppercase tracking-widest text-gold font-bold mb-3">Estados con licencia</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">GA</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">FL</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">TX</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">AL</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">TN</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">NC</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">SC</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">IN</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">MO</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">UT</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">VA</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">IL</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">KS</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">AZ</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">OH</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">WI</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">IA</span>
+            <span class="bg-gold/20 text-gold border border-gold/40 px-2.5 py-1 rounded-md text-xs font-bold">KY</span>
+          </div>
+        </div>
+        <a class="block w-full bg-gold text-primary-container text-center py-3 rounded-xl font-bold text-sm mt-2">Verificar cobertura en mi estado</a>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-16"><strong>3 — Mapa + Panel:</strong> Mapa USA grande como protagonista + panel derecho con stats, lista de estados, CTA. Más visual, geográfico.</p>
+
+<!-- COMPARATIVA -->
+<section class="bg-primary-container text-white py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <h2 class="font-display font-bold text-3xl text-center mb-10">¿Cuál te late?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">1 · Bento Grid</h3>
+        <p class="text-sm text-on-primary-container">Tamaños mixtos. Georgia hero 4x grande + cards intercaladas navy/blanco. Estilo Apple/Notion.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">2 · Por Regiones</h3>
+        <p class="text-sm text-on-primary-container">4 paneles: Sureste · Sur · Medio Oeste · Oeste. Cada región agrupa sus estados. Más organizado.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">3 · Mapa + Panel</h3>
+        <p class="text-sm text-on-primary-container">Mapa USA grande + panel con stats + chips de estados. Más visual/geográfico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

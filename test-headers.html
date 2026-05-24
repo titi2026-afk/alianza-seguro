@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prueba: 3 gradientes azul claro → azul oscuro | Alianza Seguro</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>tailwind.config={theme:{extend:{colors:{surface:"#f7f9fb",primary:"#0a1128","primary-container":"#141a32","on-primary":"#ffffff","on-primary-container":"#bfc5e4",secondary:"#4a5568",outline:"#76767e","outline-variant":"#c6c6ce",gold:"#c9a961"},fontFamily:{display:["Playfair Display","serif"],sans:["Plus Jakarta Sans","sans-serif"]},maxWidth:{container:"1280px"},spacing:{"px-page":"64px"}}}}</script>
+<style>
+  body { font-family: "Plus Jakarta Sans", sans-serif; }
+  .font-display { font-family: "Playfair Display", serif; letter-spacing: -0.01em; }
+  .label { background:#16a34a; color:white; padding:6px 18px; border-radius:999px; font-size:13px; font-weight:700; display:inline-block; }
+
+  /* Opción A — diagonal: azul claro arriba-izquierda → azul oscuro abajo-derecha */
+  .hdr-a {
+    background: linear-gradient(135deg, #5b6db5 0%, #2d3a73 40%, #141a32 80%, #0a1128 100%);
+  }
+
+  /* Opción B — vertical: azul claro arriba → azul oscuro abajo + halo radial sutil */
+  .hdr-b {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(143,166,225,0.5) 0%, transparent 70%),
+      linear-gradient(180deg, #3a4d8a 0%, #1a2347 50%, #0a1128 100%);
+  }
+
+  /* Opción C — horizontal: azul claro izquierda → azul oscuro derecha + suave glow */
+  .hdr-c {
+    background:
+      radial-gradient(ellipse 60% 70% at 0% 50%, rgba(122,143,205,0.6) 0%, transparent 60%),
+      linear-gradient(90deg, #2d3d7a 0%, #1a2347 45%, #0a1128 100%);
+  }
+</style>
+</head>
+<body class="bg-surface antialiased">
+
+<header class="bg-primary text-white py-8">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-2">Prueba de diseño · No publicado</p>
+    <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">3 gradientes azul claro → azul oscuro para los headers</h1>
+    <p class="text-on-primary-container text-sm">Sin acentos dorados en el fondo. Solo "hispanos en EE.UU." en dorado dentro del título. <a href="index.html" class="underline">← Volver al sitio</a></p>
+  </div>
+</header>
+
+<!-- ============================ OPCIÓN A ============================ -->
+<div class="bg-surface py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción A · Diagonal azul claro arriba-izq → azul oscuro abajo-der</span></div></div>
+<section class="hdr-a text-white py-20 lg:py-28 relative overflow-hidden">
+  <div class="relative max-w-container mx-auto px-6 lg:px-px-page text-center">
+    <nav class="text-xs text-on-primary-container mb-4"><a class="hover:text-white">Inicio</a> <span class="mx-2">/</span> <span>Servicios</span></nav>
+    <h1 class="font-display text-4xl md:text-5xl mb-4">Servicios de seguros para <span class="text-gold">hispanos en EE.UU.</span></h1>
+    <p class="text-on-primary-container max-w-2xl mx-auto">Asesoría profesional para encontrar la cobertura adecuada según tu edad, ingresos, estado y necesidades médicas.</p>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-12"><strong>A:</strong> Diagonal limpio. El azul claro entra por la esquina superior izquierda y se oscurece progresivamente.</p>
+
+<!-- ============================ OPCIÓN B ============================ -->
+<div class="bg-surface py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción B · Vertical · azul claro arriba con halo central, azul oscuro abajo</span></div></div>
+<section class="hdr-b text-white py-20 lg:py-28 relative overflow-hidden">
+  <div class="relative max-w-container mx-auto px-6 lg:px-px-page text-center">
+    <nav class="text-xs text-on-primary-container mb-4"><a class="hover:text-white">Inicio</a> <span class="mx-2">/</span> <span>Servicios</span></nav>
+    <h1 class="font-display text-4xl md:text-5xl mb-4">Servicios de seguros para <span class="text-gold">hispanos en EE.UU.</span></h1>
+    <p class="text-on-primary-container max-w-2xl mx-auto">Asesoría profesional para encontrar la cobertura adecuada según tu edad, ingresos, estado y necesidades médicas.</p>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-12"><strong>B:</strong> Halo azul claro arriba que ilumina el centro + oscurecimiento vertical hacia abajo. Más etéreo.</p>
+
+<!-- ============================ OPCIÓN C ============================ -->
+<div class="bg-surface py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción C · Horizontal · azul claro izquierda → azul oscuro derecha</span></div></div>
+<section class="hdr-c text-white py-20 lg:py-28 relative overflow-hidden">
+  <div class="relative max-w-container mx-auto px-6 lg:px-px-page text-center">
+    <nav class="text-xs text-on-primary-container mb-4"><a class="hover:text-white">Inicio</a> <span class="mx-2">/</span> <span>Servicios</span></nav>
+    <h1 class="font-display text-4xl md:text-5xl mb-4">Servicios de seguros para <span class="text-gold">hispanos en EE.UU.</span></h1>
+    <p class="text-on-primary-container max-w-2xl mx-auto">Asesoría profesional para encontrar la cobertura adecuada según tu edad, ingresos, estado y necesidades médicas.</p>
+  </div>
+</section>
+<p class="text-xs text-secondary mt-3 text-center max-w-container mx-auto px-6 mb-16"><strong>C:</strong> Glow azul claro entrando por la izquierda + degradado horizontal a navy oscuro. Cinematográfico y arquitectónico.</p>
+
+<!-- COMPARATIVA -->
+<section class="bg-primary-container text-white py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <h2 class="font-display font-bold text-3xl text-center mb-10">¿Cuál te gusta?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">A · Diagonal</h3>
+        <p class="text-sm text-on-primary-container">Limpio, moderno. Luz desde esquina superior izquierda. Más dinámico.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">B · Vertical con halo</h3>
+        <p class="text-sm text-on-primary-container">Más etéreo. El centro brilla y se degrada hacia abajo. Estilo dreamy/premium.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">C · Horizontal con glow</h3>
+        <p class="text-sm text-on-primary-container">Arquitectónico. Luz lateral izquierda, navy profundo a la derecha. Bien cinematográfico.</p>
+      </div>
+    </div>
+    <p class="text-center text-on-primary-container text-sm mt-8">💡 Aplicaré el elegido a: servicios, sobre Ana, estados, preguntas, contacto y blog.</p>
+  </div>
+</section>
+
+</body>
+</html>

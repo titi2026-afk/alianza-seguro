@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prueba: 3 opciones de fotos de bienestar | Alianza Seguro</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>tailwind.config={theme:{extend:{colors:{surface:"#f7f9fb","surface-bright":"#ffffff","surface-container":"#eceef0","surface-container-low":"#f2f4f6","surface-container-lowest":"#ffffff",primary:"#0a1128","primary-container":"#141a32","on-primary":"#ffffff","on-primary-container":"#bfc5e4","primary-fixed":"#dce1ff",secondary:"#4a5568","secondary-container":"#d5e0f7","on-secondary-container":"#3c475a","on-surface":"#191c1e","on-surface-variant":"#46464d",outline:"#76767e","outline-variant":"#c6c6ce"},fontFamily:{display:["Playfair Display","serif"],sans:["Plus Jakarta Sans","sans-serif"]},maxWidth:{container:"1280px"},spacing:{"px-page":"64px"}}}}</script>
+<link href="assets/styles.css" rel="stylesheet" />
+<style>
+  .photo-ph {
+    background:
+      linear-gradient(135deg, rgba(20,26,50,0.55), rgba(10,17,40,0.75)),
+      radial-gradient(at 30% 30%, rgba(191,197,228,0.30), transparent 60%),
+      radial-gradient(at 70% 70%, rgba(220,225,255,0.25), transparent 60%);
+    display: flex; align-items: center; justify-content: center;
+    color: #dce1ff; position: relative; overflow: hidden;
+  }
+  .photo-ph::after {
+    content: attr(data-tag);
+    position: absolute; bottom: 12px; left: 14px;
+    font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+    opacity: .7; font-weight: 600;
+  }
+  .photo-ph .ph-icon { font-size: 56px; opacity: .8; }
+  .option-label {
+    background: #16a34a; color: white;
+    padding: 6px 16px; border-radius: 999px;
+    font-size: 13px; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .photo-marquee { display: flex; gap: 1rem; width: max-content; animation: marquee 40s linear infinite; }
+  .photo-marquee-wrap { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); }
+  .photo-marquee-wrap:hover .photo-marquee { animation-play-state: paused; }
+</style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+<header class="bg-primary text-on-primary py-8">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-2">Prueba de diseño · No publicado</p>
+    <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">3 formas de organizar las fotos de bienestar y familia</h1>
+    <p class="text-on-primary-container text-sm">Estas son las opciones de layout. Las fotos azules son placeholders — tú las reemplazas después con las fotos reales. Elige A, B o C.</p>
+    <p class="text-on-primary-container text-xs mt-3"><a href="index.html" class="underline">← Volver al sitio principal</a></p>
+  </div>
+</header>
+
+<!-- =================== OPCIÓN A: MOSAICO ASIMÉTRICO =================== -->
+<section class="bg-surface py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="option-label">Opción A</span>
+      <span class="text-sm text-secondary">Mosaico asimétrico tipo revista · 4 fotos · Sección dedicada</span>
+    </div>
+    <div class="text-center mb-10 space-y-3">
+      <span class="text-xs uppercase tracking-widest text-secondary font-semibold">Bienestar y familia</span>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-primary">Tranquilidad para los que más quieres</h2>
+      <p class="text-secondary max-w-2xl mx-auto">Una buena cobertura médica es la base para disfrutar la vida en familia con paz y seguridad.</p>
+    </div>
+    <div class="grid grid-cols-12 gap-4 h-[500px]">
+      <div class="col-span-12 md:col-span-7 photo-ph rounded-2xl" data-tag="Familia 16:10">
+        <span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">family_restroom</span>
+      </div>
+      <div class="col-span-6 md:col-span-5 photo-ph rounded-2xl" data-tag="Pareja sonriente">
+        <span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">favorite</span>
+      </div>
+      <div class="col-span-6 md:col-span-3 photo-ph rounded-2xl" data-tag="Niños felices">
+        <span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">child_care</span>
+      </div>
+      <div class="col-span-12 md:col-span-4 photo-ph rounded-2xl" data-tag="Bienestar / yoga">
+        <span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">self_improvement</span>
+      </div>
+      <div class="col-span-12 md:col-span-5 photo-ph rounded-2xl" data-tag="Hogar tranquilo">
+        <span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">home</span>
+      </div>
+    </div>
+    <p class="text-xs text-secondary mt-6 text-center"><strong>Ventaja:</strong> Mucha presencia visual, sensación editorial, conecta emocionalmente. Ideal entre Servicios y Sobre Ana.</p>
+  </div>
+</section>
+
+<div class="h-2 bg-surface-container"></div>
+
+<!-- =================== OPCIÓN B: BANNER GRANDE CON FRASE =================== -->
+<section class="bg-surface py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page mb-8">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="option-label">Opción B</span>
+      <span class="text-sm text-secondary">Banner cinemático · 1 foto grande con frase · Impacto emocional</span>
+    </div>
+  </div>
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <div class="relative rounded-3xl overflow-hidden aspect-[16/7] photo-ph" data-tag="Familia abrazándose en su hogar">
+      <span class="material-symbols-outlined" style="font-size:120px;opacity:.45;font-variation-settings:'FILL' 1;">diversity_3</span>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary-container/95 via-primary-container/60 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-8 md:p-14 text-on-primary">
+        <span class="text-xs uppercase tracking-widest text-gold font-semibold">Bienestar y familia</span>
+        <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 mb-4 max-w-2xl leading-tight">"Cuando proteges tu salud, proteges también a quienes amas."</h2>
+        <p class="text-on-primary-container max-w-xl">Asesoría hecha para que tú y tu familia tengan tranquilidad todos los días.</p>
+      </div>
+    </div>
+    <p class="text-xs text-secondary mt-6 text-center"><strong>Ventaja:</strong> Una sola foto fuerte con frase emocional. Más cinemático, menos espacio. Ideal antes del CTA final.</p>
+  </div>
+</section>
+
+<div class="h-2 bg-surface-container"></div>
+
+<!-- =================== OPCIÓN C: CARRUSEL HORIZONTAL =================== -->
+<section class="bg-surface py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page mb-8">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="option-label">Opción C</span>
+      <span class="text-sm text-secondary">Carrusel infinito · 6 fotos pequeñas que rotan · Dinámico y ligero</span>
+    </div>
+    <div class="text-center mb-8 space-y-3">
+      <span class="text-xs uppercase tracking-widest text-secondary font-semibold">Bienestar y familia</span>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-primary">Salud para cada momento de tu vida</h2>
+      <p class="text-secondary max-w-2xl mx-auto">Acompañamos a personas y familias en lo que más importa: vivir con tranquilidad.</p>
+    </div>
+  </div>
+  <div class="photo-marquee-wrap max-w-container mx-auto">
+    <div class="photo-marquee">
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Familia comiendo"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">restaurant</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Madre e hijo"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">family_restroom</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Ejercicio al aire libre"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">directions_run</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Pareja feliz"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">favorite</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Hijos jugando"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">child_care</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Bienestar mental"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">self_improvement</span></div>
+      <!-- Duplicado para loop infinito -->
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Familia comiendo"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">restaurant</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Madre e hijo"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">family_restroom</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Ejercicio al aire libre"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">directions_run</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Pareja feliz"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">favorite</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Hijos jugando"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">child_care</span></div>
+      <div class="w-[280px] h-[200px] photo-ph rounded-2xl flex-shrink-0" data-tag="Bienestar mental"><span class="material-symbols-outlined ph-icon" style="font-variation-settings:'FILL' 1;">self_improvement</span></div>
+    </div>
+  </div>
+  <p class="text-xs text-secondary mt-6 text-center max-w-container mx-auto px-6"><strong>Ventaja:</strong> Movimiento sutil, ligero, no satura. Funciona en cualquier ancho de pantalla. Ideal después del hero o antes del footer.</p>
+</section>
+
+<div class="h-2 bg-surface-container"></div>
+
+<!-- =================== RESUMEN =================== -->
+<section class="bg-primary-container text-on-primary py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <h2 class="font-display font-bold text-3xl text-center mb-8">¿Cuál te gusta más?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-on-primary-container/10 p-6 rounded-2xl border border-on-primary-container/20">
+        <h3 class="font-display font-bold text-2xl mb-3">A — Mosaico</h3>
+        <p class="text-sm text-on-primary-container mb-3"><strong class="text-on-primary">Cuándo usar:</strong> Si tienes 4-5 fotos buenas y quieres una sección visual fuerte.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-on-primary">Lugar sugerido:</strong> Entre "Sobre Ana" y "Estados".</p>
+      </div>
+      <div class="bg-on-primary-container/10 p-6 rounded-2xl border border-on-primary-container/20">
+        <h3 class="font-display font-bold text-2xl mb-3">B — Banner</h3>
+        <p class="text-sm text-on-primary-container mb-3"><strong class="text-on-primary">Cuándo usar:</strong> Si tienes UNA foto icónica que represente todo.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-on-primary">Lugar sugerido:</strong> Antes del formulario "Recibe una cotización".</p>
+      </div>
+      <div class="bg-on-primary-container/10 p-6 rounded-2xl border border-on-primary-container/20">
+        <h3 class="font-display font-bold text-2xl mb-3">C — Carrusel</h3>
+        <p class="text-sm text-on-primary-container mb-3"><strong class="text-on-primary">Cuándo usar:</strong> Si tienes 6+ fotos variadas y quieres movimiento.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-on-primary">Lugar sugerido:</strong> Después del hero o antes del footer.</p>
+      </div>
+    </div>
+    <p class="text-center text-on-primary-container text-sm mt-8">💡 También puedes elegir <strong>combinar dos opciones</strong> (ej. Carrusel C después del hero + Banner B antes del CTA).</p>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /test-*.html
+Disallow: /assets/.git/
 
 # Sitemap
 Sitemap: https://alianzaseguro.com/sitemap.xml
-
-# Disallow admin or private paths if added later
-# Disallow: /admin/

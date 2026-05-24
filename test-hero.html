@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prueba: 4 opciones de hero | Alianza Seguro</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>tailwind.config={theme:{extend:{colors:{surface:"#f7f9fb","surface-bright":"#ffffff","surface-container":"#eceef0","surface-container-low":"#f2f4f6","surface-container-lowest":"#ffffff",primary:"#0a1128","primary-container":"#141a32","on-primary":"#ffffff","on-primary-container":"#bfc5e4","primary-fixed":"#dce1ff",secondary:"#4a5568","secondary-container":"#d5e0f7","on-secondary-container":"#3c475a","on-surface":"#191c1e","on-surface-variant":"#46464d",outline:"#76767e","outline-variant":"#c6c6ce",gold:"#c9a961"},fontFamily:{display:["Playfair Display","serif"],sans:["Plus Jakarta Sans","sans-serif"]},maxWidth:{container:"1280px"},spacing:{"px-page":"64px"}}}}</script>
+<style>
+  body { font-family: "Plus Jakarta Sans", sans-serif; }
+  .font-display { font-family: "Playfair Display", serif; letter-spacing: -0.01em; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400; vertical-align: middle; }
+  .label { background:#16a34a; color:white; padding:6px 18px; border-radius:999px; font-size:13px; font-weight:700; display:inline-block; }
+</style>
+</head>
+<body class="bg-surface text-primary">
+
+<header class="bg-primary text-white py-8">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-2">Prueba de diseño · No publicado</p>
+    <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">4 opciones de hero con la foto familiar</h1>
+    <p class="text-on-primary-container text-sm">Elige A, B, C o D. <a href="index.html" class="underline">← Volver al sitio</a></p>
+  </div>
+</header>
+
+<!-- ============== OPCIÓN A: Gradiente crema actual (left to right) ============== -->
+<div class="px-6 lg:px-px-page pt-10"><span class="label">Opción A · Gradiente crema horizontal (actual)</span></div>
+<section class="relative text-primary overflow-hidden mt-4">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/hero-bg.jpg" alt="" class="w-full h-full object-cover object-[center_70%]" />
+    <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/85 to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-container mx-auto px-6 lg:px-px-page py-20 lg:py-28 grid lg:grid-cols-3 gap-12 items-center">
+    <div class="lg:col-span-2 space-y-5">
+      <span class="inline-flex items-center gap-2 bg-white/80 border border-primary-container/15 backdrop-blur px-4 py-1.5 rounded-full text-xs tracking-wider uppercase text-primary-container font-semibold">Licensed Health and Life Insurance Advisor</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-[1.1]">Asesoría personalizada en <span class="text-primary-container">seguros de salud</span> individuales y familiares.</h2>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a class="bg-primary-container text-white px-7 py-3.5 rounded-lg font-semibold text-sm">Verificar mi elegibilidad</a>
+        <a class="border-2 border-primary-container bg-white/70 text-primary-container px-7 py-3.5 rounded-lg font-semibold text-sm">Habla por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== OPCIÓN B: Gradiente navy diagonal con texto blanco ============== -->
+<div class="px-6 lg:px-px-page pt-10"><span class="label">Opción B · Navy diagonal · texto blanco · acento dorado</span></div>
+<section class="relative text-white overflow-hidden mt-4">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/hero-bg.jpg" alt="" class="w-full h-full object-cover object-[center_70%]" />
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-container/95 via-primary-container/65 to-primary-container/15"></div>
+  </div>
+  <div class="relative z-10 max-w-container mx-auto px-6 lg:px-px-page py-20 lg:py-28 grid lg:grid-cols-3 gap-12 items-center">
+    <div class="lg:col-span-2 space-y-5">
+      <span class="inline-flex items-center gap-2 bg-white/15 border border-white/40 backdrop-blur px-4 py-1.5 rounded-full text-xs tracking-wider uppercase text-white font-semibold">Licensed Health and Life Insurance Advisor</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-[1.1]">Asesoría personalizada en <span class="text-gold">seguros de salud</span> individuales y familiares.</h2>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a class="bg-gold text-primary-container px-7 py-3.5 rounded-lg font-semibold text-sm">Verificar mi elegibilidad</a>
+        <a class="border-2 border-white text-white px-7 py-3.5 rounded-lg font-semibold text-sm">Habla por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== OPCIÓN C: Cinematic dark vignette ============== -->
+<div class="px-6 lg:px-px-page pt-10"><span class="label">Opción C · Cinematic · oscuro profundo + foto al fondo</span></div>
+<section class="relative text-white overflow-hidden mt-4">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/hero-bg.jpg" alt="" class="w-full h-full object-cover object-[center_70%]" />
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+  </div>
+  <div class="relative z-10 max-w-container mx-auto px-6 lg:px-px-page py-24 lg:py-32 text-center">
+    <span class="inline-flex items-center gap-2 bg-white/15 border border-white/40 backdrop-blur px-4 py-1.5 rounded-full text-xs tracking-wider uppercase text-white font-semibold mb-6">Licensed Health and Life Insurance Advisor</span>
+    <h2 class="font-display text-5xl md:text-6xl font-bold leading-[1.1] max-w-4xl mx-auto" style="text-shadow:0 4px 30px rgba(0,0,0,.5)">Asesoría personalizada en <span class="text-gold">seguros de salud</span> individuales y familiares.</h2>
+    <div class="flex flex-wrap gap-3 pt-8 justify-center">
+      <a class="bg-gold text-primary-container px-7 py-3.5 rounded-lg font-semibold text-sm">Verificar mi elegibilidad</a>
+      <a class="border-2 border-white bg-white/10 backdrop-blur text-white px-7 py-3.5 rounded-lg font-semibold text-sm">Habla por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== OPCIÓN D: Glass card sobre la foto completa ============== -->
+<div class="px-6 lg:px-px-page pt-10"><span class="label">Opción D · Foto sin overlay · tarjeta glass con texto encima</span></div>
+<section class="relative overflow-hidden mt-4">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/hero-bg.jpg" alt="" class="w-full h-full object-cover object-[center_70%]" />
+  </div>
+  <div class="relative z-10 max-w-container mx-auto px-6 lg:px-px-page py-20 lg:py-28">
+    <div class="bg-white/90 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-2xl max-w-2xl space-y-5">
+      <span class="inline-flex items-center gap-2 bg-primary-container/10 border border-primary-container/20 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase text-primary-container font-semibold">Licensed Health and Life Insurance Advisor</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-[1.1] text-primary-container">Asesoría personalizada en <span class="text-gold">seguros de salud</span> individuales y familiares.</h2>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a class="bg-primary-container text-white px-7 py-3.5 rounded-lg font-semibold text-sm">Verificar mi elegibilidad</a>
+        <a class="border-2 border-primary-container text-primary-container px-7 py-3.5 rounded-lg font-semibold text-sm">Habla por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COMPARISON SUMMARY ============== -->
+<section class="bg-primary-container text-white py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <h2 class="font-display font-bold text-3xl text-center mb-10">¿Cuál te gusta más?</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">A · Crema</h3>
+        <p class="text-sm text-on-primary-container mb-2"><strong class="text-white">Estilo:</strong> Limpio, premium, elegante.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-white">Pros:</strong> Texto super legible. Mucho contraste. La foto se ve a la derecha.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">B · Navy diagonal</h3>
+        <p class="text-sm text-on-primary-container mb-2"><strong class="text-white">Estilo:</strong> Corporativo, autoridad, profesional.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-white">Pros:</strong> Mantiene el navy de marca. Texto blanco fácil de leer. Foto familiar visible difuminada.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">C · Cinematic</h3>
+        <p class="text-sm text-on-primary-container mb-2"><strong class="text-white">Estilo:</strong> Emocional, impactante, cinematográfico.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-white">Pros:</strong> Centrado, hero gigante. La foto domina sin ser estridente. Acento dorado pop.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
+        <h3 class="font-display font-bold text-xl mb-3 text-gold">D · Glass card</h3>
+        <p class="text-sm text-on-primary-container mb-2"><strong class="text-white">Estilo:</strong> Moderno, ligero, fotográfico.</p>
+        <p class="text-sm text-on-primary-container"><strong class="text-white">Pros:</strong> Foto sin overlay (100% natural). Tarjeta blanca con blur sobre la foto. Muy actual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
