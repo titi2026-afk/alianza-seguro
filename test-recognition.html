@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Recognition Display · 4 opciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>tailwind.config={theme:{extend:{colors:{surface:"#f7f9fb","surface-bright":"#ffffff","surface-container":"#eceef0","surface-container-low":"#f2f4f6","surface-container-lowest":"#ffffff",primary:"#0a1128","primary-container":"#141a32","on-primary":"#ffffff","on-primary-container":"#bfc5e4",secondary:"#4a5568","on-surface":"#191c1e","outline":"#76767e","outline-variant":"#c6c6ce",gold:"#c9a961"},fontFamily:{display:["Playfair Display","serif"],sans:["Plus Jakarta Sans","sans-serif"]},maxWidth:{container:"1280px"},spacing:{"px-page":"64px"}}}}</script>
+<link href="assets/styles.css" rel="stylesheet" />
+<style>
+  body { font-family: "Plus Jakarta Sans", sans-serif; }
+  .label { background:#16a34a; color:white; padding:6px 18px; border-radius:999px; font-size:13px; font-weight:700; display:inline-block; }
+  .seal-rotate { transform: rotate(-8deg); }
+  /* Subtle shine on badges */
+  @keyframes shine { 0%,100% { box-shadow: 0 0 0 0 rgba(201,169,97,.4) } 50% { box-shadow: 0 0 30px 4px rgba(201,169,97,.4) } }
+  .shine { animation: shine 3s ease-in-out infinite; }
+</style>
+</head>
+<body class="bg-surface antialiased">
+
+<header class="bg-primary text-white py-8">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-2">4 maneras de mostrar el Elite Circle of Champions</p>
+    <h1 class="font-display text-3xl md:text-4xl font-bold mb-2">¿Cómo quieres mostrar el reconocimiento?</h1>
+    <p class="text-on-primary-container text-sm">Cada opción muestra cómo se vería en HOMEPAGE y en SOBRE ANA. <a href="index.html" class="underline">← Volver al sitio</a></p>
+  </div>
+</header>
+
+<!-- ============================ OPCIÓN A — Sello/Stamp inclinado (decorativo) ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción A · Sello inclinado como un stamp oficial</span></div></div>
+<section class="bg-surface py-12">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page space-y-12">
+
+    <!-- HOMEPAGE preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En el homepage · sección "Conoce a Ana María"</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <div class="grid md:grid-cols-5 gap-10 items-center">
+          <div class="md:col-span-2 relative">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl max-w-xs mx-auto">
+              <img src="assets/ana-maria.png" alt="Ana" class="w-full h-full object-cover" />
+            </div>
+            <!-- Stamp overlay -->
+            <div class="absolute -top-4 -right-4 md:top-6 md:-right-6 seal-rotate">
+              <div class="bg-gradient-to-br from-gold to-[#a68a4f] text-white rounded-full w-28 h-28 md:w-32 md:h-32 flex flex-col items-center justify-center shadow-2xl border-4 border-white">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+                <p class="font-display font-bold text-xs leading-none mt-1">ELITE</p>
+                <p class="text-[8px] font-bold tracking-widest text-center leading-tight mt-1">CIRCLE OF<br/>CHAMPIONS</p>
+                <p class="text-[10px] font-bold mt-1">2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-3 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold">Tu asesora certificada</span>
+            <h2 class="font-display font-bold text-3xl text-primary">Conoce a Ana María Martínez</h2>
+            <p class="text-secondary">Ana María Martínez, asesora certificada en seguros de salud...</p>
+            <div class="grid grid-cols-3 gap-4 pt-2">
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+18</p><p class="text-xs text-secondary">Estados</p></div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+15</p><p class="text-xs text-secondary">Aseguradoras</p></div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+5</p><p class="text-xs text-secondary">Años exp.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE ANA preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En sobre-ana.html · sección "Reconocimientos"</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-10">
+        <h3 class="font-display font-bold text-2xl text-primary mb-4">Reconocimientos</h3>
+        <div class="bg-gradient-to-br from-primary-container to-primary text-white rounded-2xl p-8 relative overflow-hidden">
+          <div class="absolute top-6 right-6 seal-rotate">
+            <div class="bg-gradient-to-br from-gold to-[#a68a4f] text-white rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-2xl border-4 border-white">
+              <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+              <p class="font-display font-bold text-xs mt-1">ELITE</p>
+              <p class="text-[8px] font-bold tracking-widest text-center leading-tight mt-1">CIRCLE OF<br/>CHAMPIONS</p>
+              <p class="text-[10px] font-bold mt-1">2025</p>
+            </div>
+          </div>
+          <div class="max-w-md">
+            <span class="inline-block bg-gold text-primary-container px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold mb-3">Premio oficial 2025</span>
+            <h4 class="font-display font-bold text-2xl mb-2">Elite Circle of Champions</h4>
+            <p class="text-on-primary-container text-sm">En 2025, CMS reconoció a Ana María como Elite Circle of Champions por ayudar a 100-499 consumidores a inscribirse en el Marketplace.</p>
+            <a class="inline-block text-gold font-semibold text-sm mt-3">Ver certificado oficial →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary text-center max-w-container mx-auto px-6 mb-12"><strong>A · Sello inclinado:</strong> Diseño tipo "stamp" oficial. Decorativo pero elegante. No usa la imagen del badge (creamos un sello custom dorado). Muy sutil en el homepage.</p>
+
+<!-- ============================ OPCIÓN B — Trust bar horizontal (full-width banner) ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción B · Trust bar horizontal · banda completa</span></div></div>
+<section class="bg-surface py-12">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page space-y-12">
+
+    <!-- HOMEPAGE preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En el homepage · debajo de la presentación de Ana</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <div class="grid md:grid-cols-5 gap-10 items-center mb-6">
+          <div class="md:col-span-2"><div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl max-w-xs mx-auto"><img src="assets/ana-maria.png" alt="Ana" class="w-full h-full object-cover" /></div></div>
+          <div class="md:col-span-3 space-y-3">
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold">Tu asesora certificada</span>
+            <h2 class="font-display font-bold text-3xl text-primary">Conoce a Ana María Martínez</h2>
+            <p class="text-secondary">Ana María Martínez, asesora certificada en seguros de salud...</p>
+            <div class="grid grid-cols-3 gap-4"><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+18</p><p class="text-xs text-secondary">Estados</p></div><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+15</p><p class="text-xs text-secondary">Aseguradoras</p></div><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+5</p><p class="text-xs text-secondary">Años exp.</p></div></div>
+          </div>
+        </div>
+        <!-- Trust bar at the bottom of the section -->
+        <div class="bg-gradient-to-r from-primary-container via-primary to-primary-container rounded-2xl px-6 py-5 flex flex-col md:flex-row items-center gap-4 md:gap-6 text-white border border-gold/30">
+          <span class="material-symbols-outlined text-gold text-[40px] flex-shrink-0" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+          <div class="flex-1 text-center md:text-left">
+            <p class="text-[10px] uppercase tracking-widest text-gold font-bold">Reconocida por CMS / HealthCare.gov</p>
+            <p class="font-display font-bold text-xl mt-0.5">Elite Circle of Champions <span class="text-gold">2025</span></p>
+            <p class="text-xs text-on-primary-container">Premio otorgado por inscribir 100-499 consumidores en el Marketplace</p>
+          </div>
+          <a class="bg-gold text-primary-container px-5 py-2.5 rounded-lg text-sm font-bold flex-shrink-0">Ver premio</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE ANA preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En sobre-ana.html</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-10">
+        <h3 class="font-display font-bold text-2xl text-primary mb-4">Reconocimientos</h3>
+        <div class="bg-gradient-to-br from-primary-container via-primary to-primary-container rounded-3xl p-8 md:p-10 text-white border-2 border-gold/30 shadow-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-72 h-72 -mr-32 -mt-32 rounded-full" style="background:radial-gradient(circle, rgba(201,169,97,0.25), transparent 70%)"></div>
+          <div class="relative grid md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 flex justify-center">
+              <div class="w-44 h-44 rounded-full bg-gradient-to-br from-gold to-[#8a7340] flex flex-col items-center justify-center text-primary-container shadow-2xl border-8 border-white shine">
+                <span class="material-symbols-outlined text-[36px]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+                <p class="font-display font-bold text-base mt-1">ELITE</p>
+                <p class="text-[9px] font-bold tracking-widest leading-tight">CHAMPIONS</p>
+                <p class="text-sm font-bold mt-1">2025</p>
+              </div>
+            </div>
+            <div class="md:col-span-2 space-y-3">
+              <span class="inline-block bg-gold text-primary-container px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">Premio oficial 2025</span>
+              <h4 class="font-display font-bold text-3xl md:text-4xl">Elite Circle of Champions</h4>
+              <p class="text-on-primary-container text-base">En 2025, <strong class="text-white">CMS (HealthCare.gov)</strong> reconoció a Ana María como <strong class="text-gold">Elite Circle of Champions</strong> por ayudar a 100-499 consumidores hispanos a inscribirse en planes médicos del Marketplace.</p>
+              <a class="inline-flex items-center gap-2 text-gold font-bold text-sm mt-2 underline">Ver certificado oficial →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary text-center max-w-container mx-auto px-6 mb-12"><strong>B · Trust bar horizontal:</strong> Banda dorada que cierra la sección de Ana. Reemplaza el badge real del CMS por uno estilizado de marca. Más unificado con el sitio.</p>
+
+<!-- ============================ OPCIÓN C — Como 4ta stat integrada ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción C · Premio como 4ta stat integrada (1+3 layout)</span></div></div>
+<section class="bg-surface py-12">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page space-y-12">
+
+    <!-- HOMEPAGE preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En el homepage · grid 4 stats donde 1 destaca</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <div class="grid md:grid-cols-5 gap-10 items-center">
+          <div class="md:col-span-2"><div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl max-w-xs mx-auto"><img src="assets/ana-maria.png" alt="Ana" class="w-full h-full object-cover" /></div></div>
+          <div class="md:col-span-3 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold">Tu asesora certificada</span>
+            <h2 class="font-display font-bold text-3xl text-primary">Conoce a Ana María Martínez</h2>
+            <p class="text-secondary">Ana María Martínez, asesora certificada en seguros de salud...</p>
+            <!-- 4 stats: 3 normal + 1 hero -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+18</p><p class="text-xs text-secondary mt-1">Estados</p></div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+15</p><p class="text-xs text-secondary mt-1">Aseguradoras</p></div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+5</p><p class="text-xs text-secondary mt-1">Años exp.</p></div>
+              <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl p-3 text-center text-white border border-gold/40">
+                <span class="material-symbols-outlined text-gold text-[24px]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+                <p class="font-display font-bold text-xs text-gold leading-tight">ELITE<br/>CHAMPION</p>
+                <p class="text-[9px] text-on-primary-container mt-1">CMS 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE ANA preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En sobre-ana.html</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-10">
+        <h3 class="font-display font-bold text-2xl text-primary mb-4">Reconocimientos</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="lg:col-span-2 lg:row-span-2 bg-gradient-to-br from-primary-container to-primary rounded-2xl p-6 text-white relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full" style="background:radial-gradient(circle, rgba(201,169,97,0.3), transparent 70%)"></div>
+            <div class="relative">
+              <span class="material-symbols-outlined text-gold text-[48px]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+              <p class="font-display text-7xl text-gold leading-none mt-2">2025</p>
+              <h4 class="font-display font-bold text-2xl mt-2">Elite Circle of Champions</h4>
+              <p class="text-sm text-on-primary-container mt-3">Reconocimiento oficial de CMS por inscribir 100-499 consumidores en el Marketplace.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-2xl p-5"><p class="font-display font-bold text-4xl text-primary">100+</p><p class="text-xs text-secondary mt-1 uppercase tracking-wider">Consumidores inscritos</p></div>
+          <div class="bg-surface-container-low rounded-2xl p-5"><p class="font-display font-bold text-4xl text-gold">ELITE</p><p class="text-xs text-secondary mt-1 uppercase tracking-wider">Nivel del premio</p></div>
+          <div class="bg-surface-container-low rounded-2xl p-5"><p class="font-display font-bold text-4xl text-primary">CMS</p><p class="text-xs text-secondary mt-1 uppercase tracking-wider">Otorgado por</p></div>
+          <div class="bg-surface-container-low rounded-2xl p-5"><p class="font-display font-bold text-4xl text-primary">2025</p><p class="text-xs text-secondary mt-1 uppercase tracking-wider">Año del premio</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary text-center max-w-container mx-auto px-6 mb-12"><strong>C · Stat integrada:</strong> El premio entra como 4ta stat en el homepage (sin agrandar el espacio). En Sobre Ana es un bento de 4 stats donde el premio es el hero 2×2. Más balanceado.</p>
+
+<!-- ============================ OPCIÓN D — Linkedin-style endorsement panel ============================ -->
+<div class="bg-surface-container py-3"><div class="max-w-container mx-auto px-6 lg:px-px-page"><span class="label">Opción D · Panel estilo "endorsement" elegante</span></div></div>
+<section class="bg-surface py-12">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page space-y-12">
+
+    <!-- HOMEPAGE preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En el homepage</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <div class="grid md:grid-cols-5 gap-10 items-center">
+          <div class="md:col-span-2"><div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl max-w-xs mx-auto"><img src="assets/ana-maria.png" alt="Ana" class="w-full h-full object-cover" /></div></div>
+          <div class="md:col-span-3 space-y-4">
+            <!-- Endorsement chip at the very top -->
+            <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/40 px-3 py-1.5 rounded-full">
+              <span class="material-symbols-outlined text-gold text-[16px]" style="font-variation-settings:'FILL' 1;">verified</span>
+              <p class="text-[11px] font-bold text-primary-container">Elite Circle of Champions 2025 · CMS</p>
+            </div>
+            <span class="text-xs uppercase tracking-widest text-secondary font-bold block">Tu asesora certificada</span>
+            <h2 class="font-display font-bold text-3xl text-primary">Conoce a Ana María Martínez</h2>
+            <p class="text-secondary">Ana María Martínez, asesora certificada en seguros de salud...</p>
+            <div class="grid grid-cols-3 gap-4"><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+18</p><p class="text-xs text-secondary">Estados</p></div><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+15</p><p class="text-xs text-secondary">Aseguradoras</p></div><div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="font-display font-bold text-2xl text-primary">+5</p><p class="text-xs text-secondary">Años exp.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE ANA preview -->
+    <div>
+      <p class="text-xs uppercase tracking-widest text-secondary font-bold mb-4">📍 En sobre-ana.html · estilo "logro destacado"</p>
+      <div class="bg-white rounded-3xl shadow-lg p-8 md:p-10">
+        <h3 class="font-display font-bold text-2xl text-primary mb-4">Reconocimientos</h3>
+        <article class="bg-gradient-to-br from-white to-surface-container-low border-l-4 border-gold rounded-2xl p-6 md:p-8 shadow-md">
+          <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+            <div class="flex-shrink-0">
+              <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-gradient-to-br from-gold via-[#dbbf7a] to-gold flex flex-col items-center justify-center text-primary-container shadow-xl">
+                <span class="material-symbols-outlined text-[36px] md:text-[44px]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+                <p class="font-display font-bold text-xs mt-1">2025</p>
+              </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <p class="text-[11px] uppercase tracking-widest text-gold font-bold mb-1">Premio oficial · CMS / HealthCare.gov</p>
+              <h4 class="font-display font-bold text-2xl md:text-3xl text-primary leading-tight">Elite Circle of Champions 2025</h4>
+              <p class="text-secondary mt-3 leading-relaxed">Reconocimiento oficial otorgado por <strong class="text-primary">CMS (Centers for Medicare &amp; Medicaid Services)</strong> a Ana María Martínez por su servicio destacado a la comunidad hispana, ayudando a entre <strong class="text-primary">100 y 499 consumidores</strong> a inscribirse en el Marketplace durante el período de inscripción abierta 2025.</p>
+              <div class="flex flex-wrap gap-2 mt-4 justify-center md:justify-start">
+                <span class="bg-gold/15 border border-gold/30 text-primary-container px-3 py-1 rounded-full text-xs font-semibold">🏆 Nivel ELITE</span>
+                <span class="bg-gold/15 border border-gold/30 text-primary-container px-3 py-1 rounded-full text-xs font-semibold">📅 Plan Year 2025</span>
+                <span class="bg-gold/15 border border-gold/30 text-primary-container px-3 py-1 rounded-full text-xs font-semibold">👥 100-499 consumidores</span>
+              </div>
+              <a class="inline-flex items-center gap-2 text-primary font-bold text-sm mt-4 hover:gap-3 transition">Ver certificado oficial <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="text-xs text-secondary text-center max-w-container mx-auto px-6 mb-12"><strong>D · Endorsement panel:</strong> Chip pequeño en el homepage (no satura). En Sobre Ana es un panel claro con borde dorado izquierdo (estilo "logro destacado" tipo LinkedIn). Profesional y limpio.</p>
+
+<!-- COMPARATIVA -->
+<section class="bg-primary-container text-white py-16">
+  <div class="max-w-container mx-auto px-6 lg:px-px-page">
+    <h2 class="font-display font-bold text-3xl text-center mb-10">¿Cuál te late?</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20"><h3 class="font-display font-bold text-xl mb-3 text-gold">A · Sello inclinado</h3><p class="text-sm text-on-primary-container">Stamp dorado encima de la foto de Ana. Decorativo, sin imágenes pixeladas del CMS.</p></div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20"><h3 class="font-display font-bold text-xl mb-3 text-gold">B · Trust bar horizontal</h3><p class="text-sm text-on-primary-container">Banda dorada al final de la sección. Más cinematográfico.</p></div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20"><h3 class="font-display font-bold text-xl mb-3 text-gold">C · 4ta stat</h3><p class="text-sm text-on-primary-container">El premio entra como una stat más. Bento 4 cards en sobre-ana. Minimalista.</p></div>
+      <div class="bg-white/10 p-6 rounded-2xl border border-white/20"><h3 class="font-display font-bold text-xl mb-3 text-gold">D · Endorsement panel</h3><p class="text-sm text-on-primary-container">Chip pequeño en homepage + panel limpio en sobre-ana. Estilo LinkedIn.</p></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
